@@ -1,2 +1,2 @@
-# soxt
-Functional Object eXtraction and Transformation
+# foxts
+Functional Object eXtraction, Serialization and Transformation
