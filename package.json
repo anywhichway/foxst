@@ -1,0 +1,27 @@
+{
+  "name": "foxt",
+  "version": "1.0.0",
+  "description": "Functional Object eXtraction, Serilaization and Transformation for JSON",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anywhichway/foxst.git"
+  },
+  "keywords": [
+    "JSON",
+    "extraction",
+    "matching",
+    "transformation",
+    "load",
+    "ETL"
+  ],
+  "author": "Simon Y. Blackwell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anywhichway/foxst/issues"
+  },
+  "homepage": "https://github.com/anywhichway/foxst#readme"
+}
