@@ -1,10 +1,13 @@
 {
-  "name": "foxt",
+  "name": "foxst",
   "version": "1.0.0",
-  "description": "Functional Object eXtraction, Serilaization and Transformation for JSON",
-  "main": "index.js",
+  "description": "Functional Object eXtraction, Serialization and Transformation for JSON",
+  "type": "module",
+  "source": "./src/index.js",
+  "main": "./index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run build && c8 jasmine",
+    "build": "parcel build ./src/index.js"
   },
   "repository": {
     "type": "git",
@@ -13,8 +16,9 @@
   "keywords": [
     "JSON",
     "extraction",
-    "matching",
-    "transformation",
+    "match",
+    "transform",
+    "serialize",
     "load",
     "ETL"
   ],
@@ -23,5 +27,11 @@
   "bugs": {
     "url": "https://github.com/anywhichway/foxst/issues"
   },
-  "homepage": "https://github.com/anywhichway/foxst#readme"
+  "homepage": "https://github.com/anywhichway/foxst#readme",
+  "devDependencies": {
+    "c8": "^7.12.0",
+    "chai": "^4.3.7",
+    "jasmine": "^4.5.0",
+    "parcel": "^2.8.3"
+  }
 }
