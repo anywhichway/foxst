@@ -1,6 +1,6 @@
 
 const serializer = (options=false) => {
-    const {functions=options,regexs=options,infinity=options,nan=options,builtins=options} = typeof(options)==="boolean" ? {} : options;
+    const {functions=options,regexs=options,infinity=options,nan=options,builtins=options} = typeof options ==="boolean" ? {} : options;
     return function serialize(key,value) {
         const type = typeof(value);
         if((functions && type==="function") || (regexs && value && type==="object" && value instanceof RegExp)) {
@@ -42,7 +42,7 @@ const serializer = (options=false) => {
 }
 
 const reviver = (options=false,ctors={}) => {
-    const {functions=options,regexs=options,infinity=options,nan=options,builtins=options,autocreate=options} = typeof(options)==="boolean" ? {} : options;
+    const {functions=options,regexs=options,infinity=options,nan=options,builtins=options,autocreate=options} = typeof options ==="boolean" ? {} : options;
     return function revive(key,value) {
         if(typeof(value)==="string") {
             if (infinity) {
